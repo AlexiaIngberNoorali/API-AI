@@ -1,3 +1,3 @@
 # API-AI
 
-https://alexiaingbernoorali.github.io/API-AI/index.html
+http://alexiaingbernoorali.github.io/API-AI/index.html
