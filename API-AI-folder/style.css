@@ -1,0 +1,73 @@
+body {
+    background-image: url("images/bgimg4.jpg");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h1 {
+    color: rgba(22, 3, 74);/*rgba(57, 26, 168); */
+    text-decoration: overline;
+    text-decoration-color: rgba(0, 0, 255, .2);
+    font-size : 40px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.card {
+    background-color: rgba(0, 0, 255, .2);
+    width: 300px;
+    border: 8px solid rgba(0, 0, 255, .2) ;
+    padding: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  }
+
+.title {
+      color: whitesmoke;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      font-weight: 500;
+   
+      
+  }
+
+.option {
+      color: whitesmoke;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 15px;
+      font-weight: 500;    
+      
+  }
+
+#titleTwo {
+    font-style: italic;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+#submit {
+    border : 8px solid  rgba(0, 0, 255, .2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    margin-left: 75px;
+    font-size: 30px;
+    font-weight: 550;
+    letter-spacing: 2px;
+    padding: 15px;
+    background-color: rgba(0, 0, 255, .2);
+}
+
+#returned {
+    border : 3px solid  rgba(0, 0, 255, .2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    margin-left: 75px;
+    font-size: 18px;
+    font-weight: 550;
+    letter-spacing: 2px;
+    padding: 5px;
+    background-color: rgba(0, 0, 255, .2);
+}

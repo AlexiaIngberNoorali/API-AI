@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>ImmoEliza</title>
+</head>
+<body>
+
+    <h1> Let us find your dream house...</h1>
+ <div class="card">
+
+    <form method="POST">
+
+        <label class="title" for="area">Area (in m2) </label>
+        <br>
+        <input id="area" name="area" type="number"></br>
+
+        <p class="title">Choose the property-type </p>
+        <input type="radio" value="APARTMENT" name="type">
+        <label class="option" for="Appartement"> Appartement</label></br>
+
+        <input type="radio" value="HOUSE" name="type">
+        <label class="option" for="House"> House</label></br>
+
+        <input type="radio" value="OTHERS     " name="type">
+        <label class="option" for="Others"> Others</label></br>
+        <br>
+        <br>
+        <label class="title" for="area">Number of rooms :</label>
+        <input id="room" name="area" type="number"> </br>
+
+        <br>
+        <br>
+        <label class="title" for="zipcode">Zip Code</label>
+       <br>
+        <select class="scrolling">
+            <option class="zipcode" value=""></option>
+        </select>
+        <br>
+
+        <p id="titleTwo">Optionnal</p>
+        <label class="option" for="address"> Full Address</label>
+        <input style="width : 300px" type="text" name="address" id="address" placeholder="10,Cantersteen,Bruxelles,1000">
+        </br>
+ 
+
+        <br>
+        <br>
+        <input id="submit" type="button" value="submit">
+    </form>
+
+
+    <div class="estimationResult"></div>
+</div>
+
+   
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
