@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/bgimg4.jpg");
+    background-image: url("images/bgimg2.jpg");
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -35,7 +35,7 @@ h1 {
 .option {
       color: whitesmoke;
       font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 15px;
+      font-size: 18px;
       font-weight: 500;    
       
   }
@@ -70,4 +70,8 @@ h1 {
     letter-spacing: 2px;
     padding: 5px;
     background-color: rgba(0, 0, 255, .2);
+}
+
+h2 {
+    color : whitesmoke;
 }

@@ -10,12 +10,14 @@
 </head>
 <body>
 
-    <h1> Let us find your dream house...</h1>
+    <h1> Get your dream house's price...</h1>
  <div class="card">
+     <h2>Required Fields</h2>
 
     <form method="POST">
 
         <label class="title" for="area">Area (in m2) </label>
+        <br>
         <br>
         <input id="area" name="area" type="number"></br>
 
@@ -31,19 +33,24 @@
         <br>
         <br>
         <label class="title" for="area">Number of rooms :</label>
+        <br>
+        <br>
         <input id="room" name="area" type="number"> </br>
 
         <br>
         <br>
-        <label class="title" for="zipcode">Zip Code</label>
+        <label class="title" for="zipcode">Select your Zip Code</label>
+       <br>
        <br>
         <select class="scrolling">
             <option class="zipcode" value=""></option>
         </select>
         <br>
 
-        <p id="titleTwo">Optionnal</p>
+        <h2 >Optionnal Field</h2> 
         <label class="option" for="address"> Full Address</label>
+        <br>
+        <br>
         <input style="width : 300px" type="text" name="address" id="address" placeholder="10,Cantersteen,Bruxelles,1000">
         </br>
  
