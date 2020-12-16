@@ -1,4 +1,6 @@
 
+// YOu should always start by html css do the all skeleton of the code with all the form and minimal css then work on the js
+
 // Create a new fetch function to insert zip-code data into HTML using insertAdjacentHTML
 
 let scrolling = document.querySelector('.scrolling');
@@ -18,7 +20,8 @@ fetch(url)
     let zipCodes = (data.properties.data.properties['zip-code'].enum).sort(); 
     scrolling.innerHTML = "";
 
-   /*for(code = 0; code < zipCodes.length; code ++){
+   /* I dont understand 
+   for(code = 0; code < zipCodes.length; code ++){
          scrolling.insertAdjacentHTML("beforeend", `<option>${code}</option>`)
    }*/
 
@@ -29,7 +32,7 @@ fetch(url)
      take each element in zipCodes as "code" (=at each iteration the element will be named "code")
      Code CANNOT be used as a METHOD (.code NO)*/
 
-   zipCodes.forEach(code => {
+   zipCodes.forEach(code => { 
           scrolling.insertAdjacentHTML("beforeend", `<option>${code}</option>`)
    })
  
@@ -85,6 +88,8 @@ document.getElementById("submit").addEventListener('click', function(){
     let finalAddress = arrayAddress.join(",");
     console.log(finalAddress);
 
+
+
    
 
 
@@ -108,7 +113,7 @@ document.getElementById("submit").addEventListener('click', function(){
   
     
     
-  
+        // Fetch takes two parameter : first one is the url and the second one is the header which is an object
         fetch(url, {
             method: 'POST',
             // convert data put by user(object created) into json format

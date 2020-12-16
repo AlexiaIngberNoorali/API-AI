@@ -10,9 +10,12 @@
 </head>
 <body>
 
-    <h1> Get your dream house's price...</h1>
- <div class="card">
-     <h2>Required Fields</h2>
+    <h1> Get your dreamy property's price...</h1>
+
+    <!-- Mandatory Fields -->
+<div class="container">
+ <div class="cardOne">
+     <h2>For a first estimation</h2>
 
     <form method="POST">
 
@@ -47,24 +50,136 @@
         </select>
         <br>
         <br>
+        <input id="submit" type="button" value="Estimate">
+        <div class="estimationResult"></div>
+        
+    </div>
 
-        <h2 >Optionnal Field</h2>
-        <br>
-        <br> 
-        <label class="option" for="address"> Full Address</label>
-        <br>
-        <br>
-        <input style="width : 300px" type="text" name="address" id="address" placeholder="10,Cantersteen,Bruxelles,1000">
-        </br>
- 
+    <br>
+    <br>
 
+    <!-- Optionnal Fields  -->
+       <div class="cardTwo">
+        <h2>For a precise estimation</h2>
+        <div class="option">
+            <label for="landarea" class="label">Land area (in m2)</label>
+            <input id="landarea" name="landarea" type="number"></br>
+        </div>
+        
+        <div class="option">
+            <p>Garden:</p>
+            <select name="garden">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select><br>
+        </div>
+
+        <div class="option">
+            <label for="gardenarea" class="label">Garden area (in m2)</label>
+            <input id="gardenarea" name="gardenarea" type="number"></br>
+        </div>
+
+        <div class="option">
+            <p>Equipped-Kitchen:</p>
+            <select name="equipped-kitchen">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select><br>
+        </div>
+
+        <div class="option">
+            <p>Swimming Pool:</p>
+            <select name="swimmingpool">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select><br>
+        </div>
+
+        <div class="option">
+            <p>Furnished:</p>
+            <select name="furnished">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select><br>
+        </div>
+        
+    
+    </div>
+    <div class="cardThree">
+
+        <div class="option">
+            <p>Terrace:</p>
+            <select name="terrace">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select><br>
+        </div>
+        <br>
+        
+        <div class="option">
+            <label for="terrace-area" class="label">Terrace area (in m2)</label>
+            <input id="terrace-area" name="terrace-area" type="number"></br>
+        </div>
+        <br>
+        <div class="option">
+            <label for="facades-number" class="label">Facades Number:</label>
+            <br>
+            <input id="facades-number" name="facades-number" type="number"></br>
+        </div>
+
+        <div class="option">
+            <p>Building State:</p>
+            <select name="buildingstate">
+                <option value="GOOD">GOOD</option>
+                <option value="NEW">NEW</option>
+                <option value="TO RENOVATE">TO RENOVATE</option>
+                <option value="JUST RENOVATE">JUST RENOVATED</option>
+                <option value="TO REBUILD">TO REBUILD</option>
+            </select><br>
+        </div>
+        <br>
+
+        <div class="option">
+            <label class="option" for="address"> Full Address</label>
+            <input style="width : 300px" type="text" name="address" id="address" placeholder="10,Cantersteen,Bruxelles,1000">
+            </br>
+        </div>
+       
+
+        <div class="option">
+            <p>Property Subtype:</p>
+            <select name="property-subtype">
+                <option value="APARTMENT">APARTMENT</option>
+                <option value="APARTMENT_BLOCK">APARTMENT BLOCK</option>
+                <option value="BUNGALOW">BUNGALOW</option>
+                <option value="COUNTRY_COTTAGE">COUNTRY COTTAGE</option>
+                <option value="DUPLEX">DUPLEX</option>
+                <option value="EXCEPTIONAL_PROPERTY">EXCEPTIONAL PROPERTY</option>
+                <option value="FARMHOUSE">FARMHOUSE</option>
+                <option value="FLAT_STUDIO">FLAT STUDIO</option>
+                <option value="GROUND_FLOOR">GROUND FLOOR</option>
+                <option value="HOUSE">HOUSE</option>
+                <option value="KOT">KOT</option>
+                <option value="LOFT">LOFT</option>
+                <option value="MANOR_HOUSE">MANOR HOUSE</option>
+                <option value="MANSION">MANSION</option>
+                <option value="MIXED_USE_BUILDING">MIXED USE BUILDING</option>
+                <option value="OTHER_PROPERTY">OTHER PROPERTY</option>
+                <option value="PENTHOUSE">PENTHOUSE</option>
+                <option value="SERVICE_FLAT">SERVICE FLAT</option>
+                <option value="TOWN_HOUSE">TOWN HOUSE</option>
+                <option value="TRIPLEX">TRIPLEX</option>
+                <option value="VILLA">VILLA</option>
+            </select><br>
+        </div>     
         <br>
         <br>
-        <input id="submit" type="button" value="submit">
+        <input id="submit" type="button" value="Get real price">
     </form>
 
 
     <div class="estimationResult"></div>
+ </div>
 </div>
 
    

@@ -1,7 +1,13 @@
 body {
     background-image: url("images/bgimg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
+}
+.container {
+    display : flex;
+    flex-direction: row;
 }
 
 h1 {
@@ -14,15 +20,41 @@ h1 {
     margin-top: 0px;
 }
 
-.card {
+.cardOne  {
     background-color: rgba(0, 0, 255, .2);
     width: 300px;
-    border: 8px solid rgba(0, 0, 255, .2) ;
-    padding: 50px;
+    /* border: 8px solid rgba(0, 0, 255, .2) ; */
+    padding: 80px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); */
+    display : flex;
+    flex-direction: column;
   }
+
+  .cardTwo  {
+    background-color: rgba(0, 0, 255, .2);
+    width: 300px;
+    /* border: 8px solid rgba(0, 0, 255, .2) ; */
+    padding: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); */
+    display : flex;
+    flex-direction: column;
+  }
+  .cardThree {
+    background-color: rgba(0, 0, 255, .2);
+    width: 300px;
+    /* border: 8px solid rgba(0, 0, 255, .2) ; */
+    padding: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); */
+    display : flex;
+    flex-direction: column;
+  }
+
 
 .title {
       color: whitesmoke;
@@ -50,15 +82,15 @@ h1 {
 }
 
 #submit {
-    border : 8px solid  rgba(0, 0, 255, .2);
+    border : 3px solid  rgba(0, 0, 255, .2);
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: whitesmoke;
     margin-left: 75px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 550;
     letter-spacing: 2px;
     padding: 15px;
-    background-color: rgba(0, 0, 255, .2);
+    background-color: purple;
 }
 
 #returned {
@@ -75,4 +107,9 @@ h1 {
 
 h2 {
     color : whitesmoke;
+}
+
+input {
+    border-radius: 4px;
+    padding: 6px 10px;
 }
