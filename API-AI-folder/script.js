@@ -1,60 +1,35 @@
-
-// YOu should always start by html css do the all skeleton of the code with all the form and minimal css then work on the js
-
 // Create a new fetch function to insert zip-code data into HTML using insertAdjacentHTML
 
-let scrolling = document.querySelector('.scrolling');
+let zipcode = document.querySelector('#zipcode');
 const url = "http://cnos4.herokuapp.com/predict"; 
-console.log(scrolling)
+console.log(zipcode)
 
 fetch(url)
 .then(response => response.json())
 .then(data =>{
 
     //empty variable that will be recieving data from API
-    //Jquery syntax to access property "zip-code"(a way to integrate the API property that contains a dash. Not accepted in ES6) 
-
-    console.log(data.properties.data.properties['zip-code'].enum) 
+    //Jquery syntax to access property "zip-code"(a way to integrate the API property that contains a dash. Not accepted in ES6)
 
     //Apply sort() method (put data in proper order) to array (zip-code) and store it into zipCodes variable
-    let zipCodes = (data.properties.data.properties['zip-code'].enum).sort(); 
-    scrolling.innerHTML = "";
-
-   /* I dont understand 
-   for(code = 0; code < zipCodes.length; code ++){
-         scrolling.insertAdjacentHTML("beforeend", `<option>${code}</option>`)
-   }*/
+    let dropdownZip = (data.properties.data.properties['zip-code'].enum).sort(); 
+    // zipcode.innerHTML = "";
 
    
-/*   code = i = variable
-     I am in zipCodes so no need to use it inside the body of the forEach
-     The iterable(array) on which the forEach is being applied cannot be in the body of the foreach
-     take each element in zipCodes as "code" (=at each iteration the element will be named "code")
-     Code CANNOT be used as a METHOD (.code NO)*/
 
-   zipCodes.forEach(code => { 
-          scrolling.insertAdjacentHTML("beforeend", `<option>${code}</option>`)
+    dropdownZip.forEach(code => { 
+          zipcode.insertAdjacentHTML("beforeend", `<option>${code}</option>`);
    })
  
 });
 // END OF FETCH
-// x equals any values returned by addEvenListener›
-// to call a variable where its value depends on an addEventListener
 
-let x = scrolling.addEventListener('change', ()=>{
-     x= document.querySelector(".scrolling").value;
- })
 
 
 // Store the x variable in the data object defined below and transform into integer : new Number(x)
-
-
-
-
-
-
-
-
+let x = zipcode.addEventListener('click', ()=>{
+     x= document.querySelector("#zipcode").value;
+ })
 
 
 
@@ -75,6 +50,9 @@ document.getElementById("submit").addEventListener('click', function(){
     console.log(area);
     // let zipCode = new Number(document.querySelector('.zipcode').value);
     // console.log(zipCode);
+
+    let zip = new Number(document.getElementById('zipcode').value);
+
     let priceResult = document.querySelector('.estimationResult');
     console.log(priceResult);
 
@@ -108,12 +86,11 @@ document.getElementById("submit").addEventListener('click', function(){
         }
         console.log(inputData);
 
-    // api that deals with access/cors problem : const proxyurl = "https://cors-anywhere.herokuapp.com/"; 
-    //Snippet of code to overcome the cor policy problem : https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe
+// api that deals with access/cors problem : const proxyurl = "https://cors-anywhere.herokuapp.com/"; 
+//Snippet of code to overcome the cor policy problem : https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe
   
     
-    
-        // Fetch takes two parameter : first one is the url and the second one is the header which is an object
+
         fetch(url, {
             method: 'POST',
             // convert data put by user(object created) into json format
@@ -143,7 +120,7 @@ document.getElementById("submit").addEventListener('click', function(){
 
 
             priceResult.innerHTML = "";
-            priceResult.insertAdjacentHTML("beforeend", `<p id="returned">Only ${propertyValue} euros, baby!</p>`);
+            priceResult.insertAdjacentHTML("beforeend", `<p id="returned">Only ${propertyValue} euros </p>`);
 
         });
         // .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
